@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+	  <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+      <link href="searchcss.css" rel="stylesheet" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:white;">
+	<div class = "row">
+		<span class = "box" ><img src="newlogo.png" id = "img" width="300" height="50" style="padding: 20px" onclick="location.href='index.html'"></span>
+		<span id = "user"><label><i class="fa fa-user-circle" style="font-size:24px"></i>    <b>    inlightful11</b></label></span>
+	</div>
+<hr color="black">
+
+
+
+	
+		<div id = "byboth">
+		<div class="center-div">
+		<h2 id="title"> SEARCH FOR RESTAURANTS </h2>
+		<h3 id="subtitle">You can search either by location or by name
+		</h3> 
+		<h4 id="subt">(if you wish, you can search by 
+		both parameters, too)
+		</h4>
+		
+		</div>
+		<div class="center"> 
+		<table>
+		<tr>
+		<td class="selection">Spice Rate:</td>
+		<td>
+		<fieldset class="rating">
+					
+					<input type="radio" id="field1_star5" name="rating1" value="5" /><label class = "full" for="field1_star5"></label>
+					<input type="radio" id="field1_star4" name="rating1" value="4" /><label class = "full" for="field1_star4"></label>
+					<input type="radio" id="field1_star3" name="rating1" value="3" /><label class = "full" for="field1_star3"></label>
+					<input type="radio" id="field1_star2" name="rating1" value="2" /><label class = "full" for="field1_star2"></label>
+					<input type="radio" id="field1_star1" name="rating1" value="1" /><label class = "full" for="field1_star1"></label>
+			  </fieldset> </td>
+
+		 
+		<tr> <td class="selection">
+
+		Location: </td>
+		<td> <input id="restoplace" type="text" style="width:130px;"/> or Near me
+		<input id="checkBox" type="checkbox">
+		</td> </tr>
+		<tr> <td class="selection" >
+		Name of Restaurant: </td>
+		<td> <input id="resto" type="text" style="width:243px;"/>
+		</td> </tr>
+		</table> </div>
+		<div class="center"> <input id="search" type="submit" value="Search" >
+		</div>
+	</div>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="./searchjs.js"></script>
+	<script src="./resultjs.js"></script>
+</body>
+</html>
